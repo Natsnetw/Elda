@@ -1,0 +1,142 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+  --OpenSans: sans-serif;
+  --Poppins: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo {
+    align-self: flex-start;
+}
+
+.logo img {
+    height: 5rem;
+}
+
+.illustration {
+    margin: 3rem 0;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+.header-content {
+    text-align: center;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.header-content h1 {
+    font-family: var(--Poppins);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-family: var(--OpenSans);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.header-content a {
+    background-color: white;
+    padding: 0.8rem 5rem;
+    text-decoration: none;
+    border-radius: 10rem;
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: violet;
+    box-shadow: 1px 1px 1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.header-content a:hover {
+    color: white;
+    background-color: var(--softmagenta);
+}
+
+.social-media-icon {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 7rem;
+}
+
+.social-media-icon i {
+    border: 1px white;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: relative;
+}
+
+.social-media-icon i:hover {
+    color: var(--softmagenta);
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+    }
+    main {
+       padding: 3rem 6rem; 
+    }
+    .logo img {
+        height: 3rem;
+    }
+    .cover {
+        display: flex;
+        align-items: center;
+    }
+    .illustration {
+        min-width: 50%;
+        margin: 5rem 0;
+        margin-right: 3rem;
+    }
+    .header-content {
+        text-align: left;
+    }
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    .header-content p {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+    .header-content a {
+        padding: 1rem;
+    }
+    .social-media-icon {
+        align-self: flex-end;
+    }
+}
+
+
+
