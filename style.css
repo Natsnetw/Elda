@@ -1,7 +1,7 @@
 :root {
   --Violet: hsl(257, 40%, 49%);
   --SoftMagenta: hsl(300, 69%, 71%);
-  --OpenSans: sans-serif;
+  --OpenSans: "Open Sans", sans-serif;
   --Poppins: "Poppins", sans-serif;
 }
 
@@ -72,7 +72,7 @@ main {
     font-weight: 600;
     font-size: 0.8rem;
     margin-bottom: 2rem;
-    color: violet;
+    color: var(--violet);
     box-shadow: 1px 1px 1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
