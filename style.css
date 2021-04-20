@@ -15,7 +15,7 @@ body {
     max-width: 100vw;
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-color: var(--violet);
+    background-color: var(--Violet);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,7 +78,7 @@ main {
 
 .header-content a:hover {
     color: white;
-    background-color: var(--softmagenta);
+    background-color: var(--SoftMagenta);
 }
 
 .social-media-icon {
@@ -97,7 +97,7 @@ main {
 }
 
 .social-media-icon i:hover {
-    color: var(--softmagenta);
+    color: var(--SoftMagenta);
 }
 
 @media only screen and (min-width: 992px) {
